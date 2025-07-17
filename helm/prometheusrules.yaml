@@ -1,10 +1,15 @@
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:
-  name: fast57-prometheus-rule
+  name: fast57-rules
 spec:
   groups:
-  - name: fast57-rules
+  - name: fast57.rules
     rules:
-    - alert: InstanceDown
-      expr: up == 0
+    - alert: HighRequestLatency
+      expr: rate(requests{job="fast57"}[5m]) > 0.05
+      for: 5m
+      labels:
+        severity: warning
+      annotations:
+        summary: High request latency
