@@ -1,0 +1,6 @@
+apiVersion: monitoring.coreos.com/v1
+kind: Alertmanager
+metadata:
+  name: fast57-alertmanager
+spec:
+  replicas: 2
