@@ -1,7 +1,5 @@
 replicaCount: 2
 image:
-  repository: fast57
+  repository: user-jenkins/fast57
   tag: latest
   pullPolicy: IfNotPresent
-nameOverride: ""
-fullnameOverride: ""
