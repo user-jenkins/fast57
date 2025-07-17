@@ -1,0 +1,7 @@
+replicaCount: 2
+image:
+  repository: fast57
+  tag: latest
+  pullPolicy: IfNotPresent
+nameOverride: ""
+fullnameOverride: ""
