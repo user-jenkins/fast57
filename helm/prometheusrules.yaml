@@ -1,0 +1,10 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: fast57-prometheus-rule
+spec:
+  groups:
+  - name: fast57-rules
+    rules:
+    - alert: InstanceDown
+      expr: up == 0
