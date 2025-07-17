@@ -1,7 +1,6 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: fast57-configmap
+  name: fast57-config
 data:
-  APP_NAME: fast57
-  APP_VERSION: 1.0
+  APP_NAME: "fast57"
