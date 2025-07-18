@@ -1,4 +1,5 @@
 FROM openjdk:8-jdk-alpine
-ARG JAR_FILE=target/fast57-0.0.1-SNAPSHOT.jar
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+WORKDIR /app
+COPY target/fast57.jar /app/
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "fast57.jar"]
