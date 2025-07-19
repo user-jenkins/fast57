@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: fast57-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: fast57
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: fast57
-        image: user-jenkins/fast57:latest
+        image: fast57:latest
         ports:
         - containerPort: 8080
