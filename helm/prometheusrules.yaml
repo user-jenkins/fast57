@@ -6,5 +6,5 @@ spec:
   groups:
   - name: fast57-rules
     rules:
-    - alert: HighRequestLatency
-      expr: rate(request_latency_bucket[1m]) > 0.05
+    - alert: InstanceDown
+      expr: up == 0
