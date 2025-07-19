@@ -1,5 +1,6 @@
 FROM openjdk:8-jdk-alpine
 WORKDIR /app
-COPY target/fast57.jar /app/
+COPY . /app
+RUN javac Main.java
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "fast57.jar"]
+CMD ["java", "Main"]
