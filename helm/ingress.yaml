@@ -11,6 +11,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: fast57
+            name: fast57-service
             port:
               number: 80
