@@ -1,7 +1,5 @@
-replicaCount: 2
+replicaCount: 1
 image:
-  repository: user-jenkins/fast57
+  repository: fast57
   tag: latest
   pullPolicy: IfNotPresent
-name: fast57
-port: 8080
