@@ -3,7 +3,7 @@ kind: Alertmanager
 metadata:
   name: fast57-alertmanager
 spec:
-  replicas: 1
+  replicas: 2
   resources:
     requests:
       cpu: 100m
